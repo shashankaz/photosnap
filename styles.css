@@ -22,11 +22,18 @@ body {
 }
 
 #logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
   cursor: pointer;
   text-transform: uppercase;
-  font-size: 0.7rem;
+}
+
+#logo h1 {
+  font-size: 1.2vw;
   font-weight: 900;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1vw;
 }
 
 #url {
@@ -38,12 +45,12 @@ body {
   list-style: none;
 }
 
-#url ul a {
-  font-size: 0.85rem;
+#url ul li {
+  cursor: pointer;
+  font-size: 0.85vw;
   text-transform: uppercase;
-  text-decoration: none;
   color: #000;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1vw;
   font-weight: 500;
 }
 
@@ -55,10 +62,9 @@ body {
 
 #btn button {
   padding: 12px 24px;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1vw;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.8vw;
   font-weight: 600;
   background-color: #000;
   color: #fff;
@@ -88,25 +94,25 @@ body {
 }
 
 #left h1 {
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: 500;
-  line-height: 3.5rem;
+  line-height: 3.5vw;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1vw;
 }
 
 #left p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1vw;
+  line-height: 1.5vw;
   color: #999;
 }
 
 #left h4 {
   text-transform: uppercase;
   padding: 10px 0;
-  font-size: 0.7rem;
-  word-spacing: 0.2rem;
-  letter-spacing: 0.1rem;
+  font-size: 0.7vw;
+  word-spacing: 0.2vw;
+  letter-spacing: 0.1vw;
 }
 
 #left h4:hover {
@@ -119,7 +125,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
 }
 
 #right img {
@@ -140,6 +145,7 @@ body {
 }
 
 #card:hover {
+  cursor: pointer;
   transform: translateY(-20px);
   transition: all 0.3s ease;
 }
@@ -151,24 +157,18 @@ body {
 }
 
 #card h1 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.5vw;
+  line-height: 2vw;
 }
 
 #card p {
-  font-size: 0.9rem;
+  font-size: 0.9vw;
 }
 
-/* #card hr {
-  border: 0.5px solid #fff;
-  margin: 20px 0;
-  width: 100%;
-} */
-
 #card h2 {
-  font-size: 0.8rem;
+  font-size: 0.8vw;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1vw;
   padding-top: 18px;
   margin-top: 18px;
   width: 100%;
@@ -196,14 +196,20 @@ body {
   justify-content: center;
 }
 
+#contents #img img {
+  height: 120px;
+  width: 120px;
+}
+
 #contents h1 {
-  font-size: 1.3rem;
+  font-size: 1.3vw;
   padding: 20px 0;
 }
 
 #contents p {
   text-align: center;
-  line-height: 1.5rem;
+  font-size: 1vw;
+  line-height: 1.5vw;
   color: #999;
   font-weight: 400;
 }
@@ -211,4 +217,280 @@ body {
 #footer {
   background-color: #000;
   height: 250px;
+  display: flex;
+  padding: 50px 150px;
+}
+
+#part1 {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+#part1 #logo {
+  justify-content: flex-start;
+}
+
+#icons {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  font-size: 1.2vw;
+}
+
+#part2 {
+  width: 50%;
+}
+
+#part2 ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#part2 ul li {
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.8vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08vw;
+}
+
+#part3 {
+  width: 25%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #fff;
+}
+
+#part3 h4 {
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-size: 0.7vw;
+  word-spacing: 0.2vw;
+  letter-spacing: 0.1vw;
+}
+
+#part3 h4:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#part3 p {
+  font-size: 0.9vw;
+  color: #999;
+}
+
+#invite {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+}
+
+@media (max-width:1024px) {
+  #nav {
+    padding: 0 100px;
+  }
+
+  #logo h1 {
+    font-size: 1.7vw;
+  }
+
+  #url ul li {
+    font-size: 1.2vw;
+  }
+
+  #btn button {
+    font-size: 1vw;
+  }
+
+  #left {
+    padding: 0 100px;
+  }
+
+  #left h1 {
+    font-size: 3vw;
+    line-height: 3.5vw;
+  }
+
+  #left p {
+    font-size: 0.9vw;
+    line-height: 1.3vw;
+  }
+
+  #left h4 {
+    font-size: 0.5vw;
+  }
+
+  #right img {
+    width: 100%;
+  }
+
+  #card {
+    padding: 20px;
+    height: 350px;
+  }
+
+  #card h1 {
+    font-size: 1.3vw;
+    line-height: 1.8vw;
+  }
+
+  #card p {
+    font-size: 0.8vw;
+  }
+
+  #card h2 {
+    font-size: 0.7vw;
+  }
+
+  #info-section {
+    padding: 50px 0;
+  }
+
+  #contents #img img {
+    height: 100px;
+    width: 100px;
+  }
+
+  #contents h1 {
+    font-size: 1.1vw;
+  }
+
+  #contents p {
+    font-size: 0.9vw;
+    line-height: 1.3vw;
+  }
+
+  #footer {
+    padding: 50px;
+  }
+
+  #part1 {
+    width: 30%;
+  }
+
+  #icons {
+    font-size: 1vw;
+  }
+
+  #part2 ul li {
+    font-size: 0.7vw;
+  }
+
+  #part3 h4 {
+    font-size: 0.6vw;
+  }
+
+  #part3 p {
+    font-size: 0.8vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav {
+    padding: 0 50px;
+  }
+
+  #logo h1 {
+    font-size: 1.5vw;
+  }
+
+  #url ul li {
+    font-size: 1vw;
+  }
+
+  #btn button {
+    font-size: 1vw;
+  }
+
+  #left {
+    padding: 0 50px;
+  }
+
+  #left h1 {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  #left p {
+    font-size: 0.8vw;
+    line-height: 1.1vw;
+  }
+
+  #left h4 {
+    font-size: 0.4vw;
+  }
+
+  #right img {
+    width: 100%;
+  }
+
+  #card {
+    padding: 20px;
+    height: 350px;
+  }
+
+  #card h1 {
+    font-size: 1.2vw;
+    line-height: 1.6vw;
+  }
+
+  #card p {
+    font-size: 0.7vw;
+  }
+
+  #card h2 {
+    font-size: 0.6vw;
+  }
+
+  #info-section {
+    padding: 50px 0;
+  }
+
+  #contents #img img {
+    height: 100px;
+    width: 100px;
+  }
+
+  #contents h1 {
+    font-size: 0.9vw;
+  }
+
+  #contents p {
+    font-size: 0.8vw;
+    line-height: 1.1vw;
+  }
+
+  #footer {
+    padding: 50px;
+  }
+
+  #part1 {
+    width: 30%;
+  }
+
+  #icons {
+    font-size: 0.8vw;
+  }
+
+  #part2 ul li {
+    font-size: 0.6vw;
+  }
+
+  #part3 h4 {
+    font-size: 0.5vw;
+  }
+
+  #part3 p {
+    font-size: 0.7vw;
+  }
 }
